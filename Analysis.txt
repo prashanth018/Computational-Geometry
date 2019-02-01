@@ -1,0 +1,50 @@
+Time Complexity:
+
+DCEL:
+- All the methods except addEdge() takes O(1).
+- So Whenever addEdge() is used it takes O(|E|) in the worst case.
+
+Monotonizing a Concave Polygon (in main() function):
+- initializeFace, initializeEdge, initializeVert each of them takes at max O(|E|)
+- maximum number of split and merge vertices possible is less than n/2 where n is the number of vertices
+- for every split vertex and merge vertex in the worst case we should be joining them with a regular vertex in this case we get to insert n/2 diagonals.
+- if we insert n/2 diagonals where n is number of vertices, we will have O(|V|*|E|) for the whole operation because it takes O(|E|) in the worst case to insert a diagonal
+
+MonotoneTriangulation:
+- TimeComplexity of these is equivalent to number of diagonals to be inserted.
+- it takes n-2 diagonals to be inserted in any polygon, where n is the number of vertices. Retrieving each of these vertices takes O(log(|V|)) for each vertex.
+- each diagonal insertion takes O(|E|) in worst case.
+- Overall it takes O(|E|*|V|*log(|V|)).
+
+Hence the Overall Time Complexity is O(|E|*|V|*log(|V|)).
+
+
+Space Complexity:
+
+DCEL:
+- vertrec -> O(|V|)
+- edgerec -> O(|E|)
+- facerec -> O(|E|/3)
+
+MonotoneTriangulation:
+- To keep track of the vertices in the left chain and the right chain i used a map stl in c++ which is an RB tree. It takes O(log(|V|)) time for insertion and retrieval  
+- We used a priority queue which takes O(|V|).
+
+
+Monotonizing a Concave Polygon (in main() function):
+- As already said, initializeFace, initializeEdge, initializeVert each of these take O(|E|/3), O(|E|), O(|V|) respectively.
+- Since we can at max add n/2 diagonals, content in edgerec and facerec can at max double which is still linear.
+- In order to maintain T which is status queue we can in the worst case have |E| leaves, which means 2*|E| number of total nodes which is still linear.
+- Hence in this step the space complexity is O(|E|).
+
+Hence the Overall space complexity is O(|E|). 
+
+
+Degeneracy:
+
+- When there is an input which has almost same X coordinate, it failed.(Ran into infinite loop).
+- It fails when split vertex and merge vertex are very near.
+
+
+
+
