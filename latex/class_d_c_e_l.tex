@@ -1,0 +1,367 @@
+\hypertarget{class_d_c_e_l}{}\section{D\+C\+EL Class Reference}
+\label{class_d_c_e_l}\index{D\+C\+EL@{D\+C\+EL}}
+
+
+{\ttfamily \#include $<$Polygon\+Triangulation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} \hyperlink{class_d_c_e_l_aefc1eac40e592c8616801c02b5f45545}{source} (\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}{e})
+\begin{DoxyCompactList}\small\item\em A function which returns source of an edge. \end{DoxyCompactList}\item 
+\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} \hyperlink{class_d_c_e_l_ad0eee4ae2f3c3676fc808e4359a0a874}{target} (\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}{e})
+\begin{DoxyCompactList}\small\item\em A function which returns destination of an edge. \end{DoxyCompactList}\item 
+int \hyperlink{class_d_c_e_l_a484956955fab5d68192aace0ca07bf70}{face} (\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}{e})
+\begin{DoxyCompactList}\small\item\em A function which returns face incident on the halfedge. \end{DoxyCompactList}\item 
+\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{class_d_c_e_l_a6829b94835f0c953a1f0c557131feef9}{twin} (\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}{e})
+\begin{DoxyCompactList}\small\item\em A function which returns twin of an edge. \end{DoxyCompactList}\item 
+\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{class_d_c_e_l_a384c90222cc7e6a09ba47d66e9e11df8}{next\+\_\+he} (\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}{e})
+\begin{DoxyCompactList}\small\item\em A function which returns next halfedge of an edge. \end{DoxyCompactList}\item 
+\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{class_d_c_e_l_abc4ba3118faae5afdebc3a180daa4789}{he} (\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} \hyperlink{_polygon_triangulation_8h_a6ef2f6631c3d06ff06abb262179de4c1}{v})
+\begin{DoxyCompactList}\small\item\em A function which returns prev halfedge of an edge. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} $>$ \hyperlink{class_d_c_e_l_a746b067777dfc25859a7082f27a1364e}{iter\+Face} (int x)
+\begin{DoxyCompactList}\small\item\em A function which iterates over a face and returns vertices given the value of face. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_a989e872e63f1d245aca75ffae6d5c608}{Monotone\+Triangulation} ()
+\begin{DoxyCompactList}\small\item\em A function which Triangulates monotone polygon. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_a886263abba0d84b7e459a6acb5c594ae}{initialize\+Face} ()
+\begin{DoxyCompactList}\small\item\em A function which initializes the facerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_ab53853e31a8715a783d4b92b37aabdfc}{initialize\+Vert} ()
+\begin{DoxyCompactList}\small\item\em A function which initializes the vertrev of \hyperlink{class_d_c_e_l}{D\+C\+EL}. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_a84cd5349e0eda103a936e104b8cf9017}{initialize\+Edge} ()
+\begin{DoxyCompactList}\small\item\em A function which initializes the edgerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_adbd14f5b0b02b6760ae60a2f78262aaf}{print\+Edge} ()
+\begin{DoxyCompactList}\small\item\em A function which prints the edgerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_a02d6d3ab8652a6d7cd1bd4488bbec5de}{print\+Face} ()
+\begin{DoxyCompactList}\small\item\em A function which prints the facerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_a6c1af27ae2c0bf06abb206e64ac517a2}{print\+Vert} ()
+\begin{DoxyCompactList}\small\item\em A function which prints the vertrec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. \end{DoxyCompactList}\item 
+void \hyperlink{class_d_c_e_l_aed8e7593ec708470baff3e6c9da353ff}{add\+Edge} (\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} u, \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} \hyperlink{_polygon_triangulation_8h_a6ef2f6631c3d06ff06abb262179de4c1}{v})
+\begin{DoxyCompactList}\small\item\em A function which takes 2 vertices as input and adds the halfedges in the \hyperlink{class_d_c_e_l}{D\+C\+EL}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_c_e_l_a7c9ae7601c01ee464ffddf159597cd69}\label{class_d_c_e_l_a7c9ae7601c01ee464ffddf159597cd69}} 
+map$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}, \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} $>$ {\bfseries vertrec}
+\item 
+vector$<$ \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} $>$ \hyperlink{class_d_c_e_l_ad1c616dc2bbcf2682aa58c8da5bd3aae}{facerec}
+\item 
+map$<$ \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}, \hyperlink{struct_half_edge}{hedge} $>$ \hyperlink{class_d_c_e_l_a88539db1a22065c15bc95f00e10ad693}{edgerec}
+\item 
+int \hyperlink{class_d_c_e_l_ab9bc9e59888b0dd878590eb146671bb0}{counter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_d_c_e_l}{D\+C\+EL} class. A Data\+Structure to store topology of a polygon. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_c_e_l_aed8e7593ec708470baff3e6c9da353ff}\label{class_d_c_e_l_aed8e7593ec708470baff3e6c9da353ff}} 
+\index{D\+C\+EL@{D\+C\+EL}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::add\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}}]{u,  }\item[{\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which takes 2 vertices as input and adds the halfedges in the \hyperlink{class_d_c_e_l}{D\+C\+EL}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & vertex 1 \\
+\hline
+{\em v} & vertex 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_aed8e7593ec708470baff3e6c9da353ff}{add\+Edge()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a484956955fab5d68192aace0ca07bf70}\label{class_d_c_e_l_a484956955fab5d68192aace0ca07bf70}} 
+\index{D\+C\+EL@{D\+C\+EL}!face@{face}}
+\index{face@{face}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{face()}{face()}}
+{\footnotesize\ttfamily int D\+C\+E\+L\+::face (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which returns face incident on the halfedge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a484956955fab5d68192aace0ca07bf70}{face()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_abc4ba3118faae5afdebc3a180daa4789}\label{class_d_c_e_l_abc4ba3118faae5afdebc3a180daa4789}} 
+\index{D\+C\+EL@{D\+C\+EL}!he@{he}}
+\index{he@{he}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{he()}{he()}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} D\+C\+E\+L\+::he (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which returns prev halfedge of an edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_abc4ba3118faae5afdebc3a180daa4789}{he()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+edge 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a84cd5349e0eda103a936e104b8cf9017}\label{class_d_c_e_l_a84cd5349e0eda103a936e104b8cf9017}} 
+\index{D\+C\+EL@{D\+C\+EL}!initialize\+Edge@{initialize\+Edge}}
+\index{initialize\+Edge@{initialize\+Edge}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{initialize\+Edge()}{initializeEdge()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::initialize\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which initializes the edgerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a84cd5349e0eda103a936e104b8cf9017}{initialize\+Edge()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a886263abba0d84b7e459a6acb5c594ae}\label{class_d_c_e_l_a886263abba0d84b7e459a6acb5c594ae}} 
+\index{D\+C\+EL@{D\+C\+EL}!initialize\+Face@{initialize\+Face}}
+\index{initialize\+Face@{initialize\+Face}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{initialize\+Face()}{initializeFace()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::initialize\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which initializes the facerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a886263abba0d84b7e459a6acb5c594ae}{initialize\+Face()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_ab53853e31a8715a783d4b92b37aabdfc}\label{class_d_c_e_l_ab53853e31a8715a783d4b92b37aabdfc}} 
+\index{D\+C\+EL@{D\+C\+EL}!initialize\+Vert@{initialize\+Vert}}
+\index{initialize\+Vert@{initialize\+Vert}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{initialize\+Vert()}{initializeVert()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::initialize\+Vert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which initializes the vertrev of \hyperlink{class_d_c_e_l}{D\+C\+EL}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_ab53853e31a8715a783d4b92b37aabdfc}{initialize\+Vert()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a746b067777dfc25859a7082f27a1364e}\label{class_d_c_e_l_a746b067777dfc25859a7082f27a1364e}} 
+\index{D\+C\+EL@{D\+C\+EL}!iter\+Face@{iter\+Face}}
+\index{iter\+Face@{iter\+Face}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{iter\+Face()}{iterFace()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} $>$ D\+C\+E\+L\+::iter\+Face (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which iterates over a face and returns vertices given the value of face. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a746b067777dfc25859a7082f27a1364e}{iter\+Face()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+vector$<$vert$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a989e872e63f1d245aca75ffae6d5c608}\label{class_d_c_e_l_a989e872e63f1d245aca75ffae6d5c608}} 
+\index{D\+C\+EL@{D\+C\+EL}!Monotone\+Triangulation@{Monotone\+Triangulation}}
+\index{Monotone\+Triangulation@{Monotone\+Triangulation}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{Monotone\+Triangulation()}{MonotoneTriangulation()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::\+Monotone\+Triangulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which Triangulates monotone polygon. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a989e872e63f1d245aca75ffae6d5c608}{Monotone\+Triangulation()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a384c90222cc7e6a09ba47d66e9e11df8}\label{class_d_c_e_l_a384c90222cc7e6a09ba47d66e9e11df8}} 
+\index{D\+C\+EL@{D\+C\+EL}!next\+\_\+he@{next\+\_\+he}}
+\index{next\+\_\+he@{next\+\_\+he}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{next\+\_\+he()}{next\_he()}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} D\+C\+E\+L\+::next\+\_\+he (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which returns next halfedge of an edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a384c90222cc7e6a09ba47d66e9e11df8}{next\+\_\+he()}\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+edge 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_adbd14f5b0b02b6760ae60a2f78262aaf}\label{class_d_c_e_l_adbd14f5b0b02b6760ae60a2f78262aaf}} 
+\index{D\+C\+EL@{D\+C\+EL}!print\+Edge@{print\+Edge}}
+\index{print\+Edge@{print\+Edge}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{print\+Edge()}{printEdge()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::print\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which prints the edgerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_adbd14f5b0b02b6760ae60a2f78262aaf}{print\+Edge()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a02d6d3ab8652a6d7cd1bd4488bbec5de}\label{class_d_c_e_l_a02d6d3ab8652a6d7cd1bd4488bbec5de}} 
+\index{D\+C\+EL@{D\+C\+EL}!print\+Face@{print\+Face}}
+\index{print\+Face@{print\+Face}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{print\+Face()}{printFace()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::print\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which prints the facerec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a02d6d3ab8652a6d7cd1bd4488bbec5de}{print\+Face()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a6c1af27ae2c0bf06abb206e64ac517a2}\label{class_d_c_e_l_a6c1af27ae2c0bf06abb206e64ac517a2}} 
+\index{D\+C\+EL@{D\+C\+EL}!print\+Vert@{print\+Vert}}
+\index{print\+Vert@{print\+Vert}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{print\+Vert()}{printVert()}}
+{\footnotesize\ttfamily void D\+C\+E\+L\+::print\+Vert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which prints the vertrec of \hyperlink{class_d_c_e_l}{D\+C\+EL}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a6c1af27ae2c0bf06abb206e64ac517a2}{print\+Vert()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_aefc1eac40e592c8616801c02b5f45545}\label{class_d_c_e_l_aefc1eac40e592c8616801c02b5f45545}} 
+\index{D\+C\+EL@{D\+C\+EL}!source@{source}}
+\index{source@{source}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{source()}{source()}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} D\+C\+E\+L\+::source (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which returns source of an edge. 
+
+Stores value of count of number of faces formed till now.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_aefc1eac40e592c8616801c02b5f45545}{source()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+vert 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_ad0eee4ae2f3c3676fc808e4359a0a874}\label{class_d_c_e_l_ad0eee4ae2f3c3676fc808e4359a0a874}} 
+\index{D\+C\+EL@{D\+C\+EL}!target@{target}}
+\index{target@{target}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{target()}{target()}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} D\+C\+E\+L\+::target (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which returns destination of an edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_ad0eee4ae2f3c3676fc808e4359a0a874}{target()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+vert 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_c_e_l_a6829b94835f0c953a1f0c557131feef9}\label{class_d_c_e_l_a6829b94835f0c953a1f0c557131feef9}} 
+\index{D\+C\+EL@{D\+C\+EL}!twin@{twin}}
+\index{twin@{twin}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{twin()}{twin()}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} D\+C\+E\+L\+::twin (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A function which returns twin of an edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_d_c_e_l_a6829b94835f0c953a1f0c557131feef9}{twin()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+edge 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_d_c_e_l_ab9bc9e59888b0dd878590eb146671bb0}\label{class_d_c_e_l_ab9bc9e59888b0dd878590eb146671bb0}} 
+\index{D\+C\+EL@{D\+C\+EL}!counter@{counter}}
+\index{counter@{counter}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int D\+C\+E\+L\+::counter}
+
+Stores record of edges. \mbox{\Hypertarget{class_d_c_e_l_a88539db1a22065c15bc95f00e10ad693}\label{class_d_c_e_l_a88539db1a22065c15bc95f00e10ad693}} 
+\index{D\+C\+EL@{D\+C\+EL}!edgerec@{edgerec}}
+\index{edgerec@{edgerec}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{edgerec}{edgerec}}
+{\footnotesize\ttfamily map$<$\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge},\hyperlink{struct_half_edge}{hedge}$>$ D\+C\+E\+L\+::edgerec}
+
+Stores record of faces. \mbox{\Hypertarget{class_d_c_e_l_ad1c616dc2bbcf2682aa58c8da5bd3aae}\label{class_d_c_e_l_ad1c616dc2bbcf2682aa58c8da5bd3aae}} 
+\index{D\+C\+EL@{D\+C\+EL}!facerec@{facerec}}
+\index{facerec@{facerec}!D\+C\+EL@{D\+C\+EL}}
+\subsubsection{\texorpdfstring{facerec}{facerec}}
+{\footnotesize\ttfamily vector$<$\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}$>$ D\+C\+E\+L\+::facerec}
+
+Stores record of vertices. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_polygon_triangulation_8h}{Polygon\+Triangulation.\+h}\end{DoxyCompactItemize}

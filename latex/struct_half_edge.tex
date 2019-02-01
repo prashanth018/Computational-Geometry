@@ -1,0 +1,55 @@
+\hypertarget{struct_half_edge}{}\section{Half\+Edge Struct Reference}
+\label{struct_half_edge}\index{Half\+Edge@{Half\+Edge}}
+
+
+{\ttfamily \#include $<$Polygon\+Triangulation.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} \hyperlink{struct_half_edge_a94238a660669b2937f9e1347b4c17b85}{origin}
+\item 
+\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{struct_half_edge_a7480da05d333a051d4156584981bed78}{twin}
+\item 
+int \hyperlink{struct_half_edge_aeb3f40cd4292ff4429911ab14043d05d}{left}
+\item 
+\mbox{\Hypertarget{struct_half_edge_a8ce3ac9de18dcfe132177c071c84e577}\label{struct_half_edge_a8ce3ac9de18dcfe132177c071c84e577}} 
+\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} {\bfseries next}
+\item 
+\hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} \hyperlink{struct_half_edge_a6c8df0be25a4c700e1565fd9fa371b52}{prev}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct. It is a data structure for storing the details of a Halfedge. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_half_edge_aeb3f40cd4292ff4429911ab14043d05d}\label{struct_half_edge_aeb3f40cd4292ff4429911ab14043d05d}} 
+\index{Half\+Edge@{Half\+Edge}!left@{left}}
+\index{left@{left}!Half\+Edge@{Half\+Edge}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily int Half\+Edge\+::left}
+
+struct value left \mbox{\Hypertarget{struct_half_edge_a94238a660669b2937f9e1347b4c17b85}\label{struct_half_edge_a94238a660669b2937f9e1347b4c17b85}} 
+\index{Half\+Edge@{Half\+Edge}!origin@{origin}}
+\index{origin@{origin}!Half\+Edge@{Half\+Edge}}
+\subsubsection{\texorpdfstring{origin}{origin}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} Half\+Edge\+::origin}
+
+struct value origin \mbox{\Hypertarget{struct_half_edge_a6c8df0be25a4c700e1565fd9fa371b52}\label{struct_half_edge_a6c8df0be25a4c700e1565fd9fa371b52}} 
+\index{Half\+Edge@{Half\+Edge}!prev@{prev}}
+\index{prev@{prev}!Half\+Edge@{Half\+Edge}}
+\subsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} Half\+Edge\+::prev}
+
+struct value next,prev \mbox{\Hypertarget{struct_half_edge_a7480da05d333a051d4156584981bed78}\label{struct_half_edge_a7480da05d333a051d4156584981bed78}} 
+\index{Half\+Edge@{Half\+Edge}!twin@{twin}}
+\index{twin@{twin}!Half\+Edge@{Half\+Edge}}
+\subsubsection{\texorpdfstring{twin}{twin}}
+{\footnotesize\ttfamily \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} Half\+Edge\+::twin}
+
+struct value twin 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_polygon_triangulation_8h}{Polygon\+Triangulation.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{_polygon_triangulation_8h}{}\section{Polygon\+Triangulation.\+h File Reference}
+\label{_polygon_triangulation_8h}\index{Polygon\+Triangulation.\+h@{Polygon\+Triangulation.\+h}}
+
+
+A Library containing the utility and core functions of computational geometry algorithm.  
+
+
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_compare}{Compare}
+\item 
+struct \hyperlink{struct_half_edge}{Half\+Edge}
+\item 
+class \hyperlink{class_d_c_e_l}{D\+C\+EL}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}\label{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}} 
+typedef pair$<$ int, int $>$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}
+\begin{DoxyCompactList}\small\item\em a shortname for datastructure holding vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}\label{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}} 
+typedef pair$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}, \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} $>$ \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}
+\begin{DoxyCompactList}\small\item\em a shortname for datastructure holding edges. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_a9d1bb0cda332a0c0903b79226db824dc}\label{_polygon_triangulation_8h_a9d1bb0cda332a0c0903b79226db824dc}} 
+typedef struct \hyperlink{struct_half_edge}{Half\+Edge} {\bfseries hedge}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_polygon_triangulation_8h_ae93df8b0dff577e86eb34f53a799a85f}{check} (\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} x, \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} y, \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} z)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_a3524489062a7568f4b85fdabe5e63111}\label{_polygon_triangulation_8h_a3524489062a7568f4b85fdabe5e63111}} 
+vector$<$ pair$<$ int, int $>$ $>$ \hyperlink{_polygon_triangulation_8h_a3524489062a7568f4b85fdabe5e63111}{VL}
+\begin{DoxyCompactList}\small\item\em a vector which holds vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_ab723effe7f1d8ca9260a80a2bfc32ce9}\label{_polygon_triangulation_8h_ab723effe7f1d8ca9260a80a2bfc32ce9}} 
+map$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}, \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} $>$ {\bfseries r\+EL}
+\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_a1d048cc1b9043b27a90d86fe0cdeab24}\label{_polygon_triangulation_8h_a1d048cc1b9043b27a90d86fe0cdeab24}} 
+map$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}, \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} $>$ \hyperlink{_polygon_triangulation_8h_a1d048cc1b9043b27a90d86fe0cdeab24}{EL}
+\begin{DoxyCompactList}\small\item\em r\+EL is reverse map of edges and EL is forward map of edgelist. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_a7bbbf4f1f00196e95e5d77cdc20ef9b7}\label{_polygon_triangulation_8h_a7bbbf4f1f00196e95e5d77cdc20ef9b7}} 
+int \hyperlink{_polygon_triangulation_8h_a7bbbf4f1f00196e95e5d77cdc20ef9b7}{before\+\_\+iter}
+\begin{DoxyCompactList}\small\item\em value of iterator before triangulation of monotones. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ int, int $>$ $>$ \hyperlink{_polygon_triangulation_8h_a6ef2f6631c3d06ff06abb262179de4c1}{v}
+\begin{DoxyCompactList}\small\item\em same as VL. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}\label{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}} 
+vector$<$ \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} $>$ \hyperlink{_polygon_triangulation_8h_af4fe7231ba50bcef9e679a62325dea81}{e}
+\begin{DoxyCompactList}\small\item\em datastructure to hold edges. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_af24cbfa5a5b2d04dc19bebf45f796962}\label{_polygon_triangulation_8h_af24cbfa5a5b2d04dc19bebf45f796962}} 
+map$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}, int $>$ \hyperlink{_polygon_triangulation_8h_af24cbfa5a5b2d04dc19bebf45f796962}{mp}
+\begin{DoxyCompactList}\small\item\em a map from vertices to type of vertex it is (split or merge or start or end or regular). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_ad379668b6fda29e4e3c0fbdf74f8adc0}\label{_polygon_triangulation_8h_ad379668b6fda29e4e3c0fbdf74f8adc0}} 
+map$<$ \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}, int $>$ \hyperlink{_polygon_triangulation_8h_ad379668b6fda29e4e3c0fbdf74f8adc0}{findind}
+\begin{DoxyCompactList}\small\item\em finds the index corresponding to the vertex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_aa461275eabca86f8a2b79c70080bc425}\label{_polygon_triangulation_8h_aa461275eabca86f8a2b79c70080bc425}} 
+map$<$ \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge}, \hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert} $>$ \hyperlink{_polygon_triangulation_8h_aa461275eabca86f8a2b79c70080bc425}{helper}
+\begin{DoxyCompactList}\small\item\em used to hold the helper of an edge(holds a vertex). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_polygon_triangulation_8h_a91a7373b44feab4be8b665436b621acc}\label{_polygon_triangulation_8h_a91a7373b44feab4be8b665436b621acc}} 
+map$<$ int, \hyperlink{_polygon_triangulation_8h_a4ef43ff5c6d42dacbc8ffd9c8cfdc189}{edge} $>$ \hyperlink{_polygon_triangulation_8h_a91a7373b44feab4be8b665436b621acc}{T}
+\begin{DoxyCompactList}\small\item\em it is a status queue which holds all the edges cut by the sweep line at a particular orientation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Library containing the utility and core functions of computational geometry algorithm. 
+
+\begin{DoxyAuthor}{Author}
+Prashanth Duvvuri 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2017-\/04-\/08 
+\end{DoxySince}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_polygon_triangulation_8h_ae93df8b0dff577e86eb34f53a799a85f}\label{_polygon_triangulation_8h_ae93df8b0dff577e86eb34f53a799a85f}} 
+\index{Polygon\+Triangulation.\+h@{Polygon\+Triangulation.\+h}!check@{check}}
+\index{check@{check}!Polygon\+Triangulation.\+h@{Polygon\+Triangulation.\+h}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily void check (\begin{DoxyParamCaption}\item[{\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}}]{x,  }\item[{\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}}]{y,  }\item[{\hyperlink{_polygon_triangulation_8h_a15bccd83c1e570e4a0ff17c42152989b}{vert}}]{z }\end{DoxyParamCaption})}
+
+A function taking 3 vertices as input and checks if they form a right turn a left turn. 
+\begin{DoxyParams}{Parameters}
+{\em x} & vertex 1 \\
+\hline
+{\em y} & vertex 2 \\
+\hline
+{\em z} & vertex 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{_polygon_triangulation_8h_ae93df8b0dff577e86eb34f53a799a85f}{check()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_polygon_triangulation_8h_a6ef2f6631c3d06ff06abb262179de4c1}\label{_polygon_triangulation_8h_a6ef2f6631c3d06ff06abb262179de4c1}} 
+\index{Polygon\+Triangulation.\+h@{Polygon\+Triangulation.\+h}!v@{v}}
+\index{v@{v}!Polygon\+Triangulation.\+h@{Polygon\+Triangulation.\+h}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily vector$<$ pair$<$ int, int $>$ $>$ v}
+
+
+
+same as VL. 
+
+\begin{DoxySeeAlso}{See also}
+vector$<$pair$<$int,int$>$ $>$ \hyperlink{_polygon_triangulation_8h_a3524489062a7568f4b85fdabe5e63111}{VL} 
+\end{DoxySeeAlso}
